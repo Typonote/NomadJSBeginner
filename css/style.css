@@ -1,3 +1,81 @@
+body {
+  background-color: beige;
+}
+
+/* 날짜(dayTitle)와 시간 */
+.Time__Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#dayTitle {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  font-size: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#clockTitle {
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+/* 로그인(Login) */
+
+.Login__Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.login-input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+.InputButton {
+  display: none;
+}
+
 .hidden {
   display: none;
+}
+
+/* 명언(Quote) */
+
+#quote {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote:hover {
+  transform: scale(1.05);
+  transition: 0.7s;
+  color: black;
+}
+
+#quote span {
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
